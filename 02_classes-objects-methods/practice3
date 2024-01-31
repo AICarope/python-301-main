@@ -1,0 +1,46 @@
+class Ingredient:
+    """Models an Ingredient."""
+
+    def __init__(self, name, amount):
+        self.name = name
+        self.amount = amount
+
+    def expire(self):
+        """Expires the ingredient item."""
+        print(f"whoops, these {self.name} went bad...")
+        self.name = "expired" + self.name
+
+    def __str__(self):
+        return f"You have {self.amount} {self.name}."
+           
+    #child class 
+class Spice(Ingredient):
+    pass
+#add a new method to the spice class
+  
+    def __init__(self, name, amount, taste):
+        super().__init__(name, amount)
+        self.taste = taste
+  
+    def grind(self):
+        print(f"You have now {self.amount} of ground {self.name}.")
+
+    def expire(self):
+         if self.name == 'salt':
+             print(f"{self.name}never expires?ask the sea?")
+         else:
+             print(f"this[self.name] wnet bad...")
+             self.name = f"expired {self.name}" 
+p = Ingredient ('peas', 21)
+print (p)
+s = Spice ('salt', 200)
+print (s)
+
+c = Ingredient('carrots', 3)
+p = Spice('pepper', 20)
+p.grind()  
+c.grind() 
+c. expire()
+p.expire()
+s = Spice('Salt', 2000)
+s.expire()

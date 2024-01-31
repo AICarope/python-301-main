@@ -1,0 +1,12 @@
+x = 10
+y = 0
+
+try:
+    result = x / y
+    print(result)
+except Exception as e:
+    print("An Exception was raised")
+except ZeroDivisionError as zde:
+    print("You cannot divide by zero")
+finally:
+    print("In finally block")

@@ -1,0 +1,22 @@
+
+#Building a Test Case
+def test_check_equality(self):
+    """Expects the two inputs to be the same."""
+    self.assertEqual(your_package_name.your_function_call(argument), expected_result)
+
+
+
+def test_raises_error(self):
+    """Expects the defined error to be raised - e.g. here a ValueError."""
+    with self.assertRaises(ValueError):
+        your_package_name.your_function_call(argument)
+
+
+#An Example Test Case
+test_math_module.py
+import unittest
+import math
+
+class TestMath(unittest.TestCase):
+    def test_floor_rounds_down(self):
+        self.assertEqual(math.floor(3.4), 3)

@@ -1,0 +1,13 @@
+import json
+import requests
+
+response = requests.get("https://ghibliapi-iansedano.vercel.app/api/films")
+data = response.json()
+
+with open("films.json", "w") as fout:
+    json.dump(data, fout)
+    
+#Inspect
+    
+#This code snippet will make a single call to the Studio Ghibli API's /films endpoint, convert the response from JSON to a list of dictionaries and save that list under the variable name data.
+#Then you're creating a new file called films.json and you're serializing the Python list object back into valid JSON data to save it in that file with the help of the json module.

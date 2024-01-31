@@ -1,0 +1,12 @@
+#The code that you could come up with if you apply the guidelines mentioned above 
+#could be saved in a file structure like this:
+
+import unittest
+import your_package_name
+
+
+class TestYourPackageName(unittest.TestCase):
+
+    def test_your_package_name_function_does_what_it_says(self):
+        # Write your specific test case in here
+        pass

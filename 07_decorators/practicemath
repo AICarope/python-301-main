@@ -1,0 +1,5 @@
+i = 0
+for num in range (10):
+    i+=num
+
+print(num)

@@ -1,0 +1,13 @@
+try:
+    num = int(input("Enter a number: "))
+except:
+    print("You didn't enter a number!")
+
+
+
+ages = {"Saruman": 1000, "Frodo": 50}
+
+if "Gollum" in ages.keys():
+    gollum_age = ages["Gollum"]
+else:
+    gollum_age = 589
