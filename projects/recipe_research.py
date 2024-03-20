@@ -7,7 +7,7 @@ class Ingredients:
         self.ingredients = ingredients
 
     def generate_recipe_search_url(self):
-        base_url = "https://www.example.com/recipes?q="
+        base_url = "https://carlsbadcravings.com/chicken-and-broccoli/ or https://www.example.com/recipes?q=chicken+broccoli+garlic+soy sauce"
         query = '+'.join(self.ingredients)
         return base_url + query
     
